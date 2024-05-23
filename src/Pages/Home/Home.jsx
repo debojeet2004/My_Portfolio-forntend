@@ -25,7 +25,7 @@ function Home() {
         <div className='w-full flex  flex-col '>
             
             <Introsection/> 
-            <div className='w-full flex flex-col md:gap-[4rem]'>
+            <div className='w-full flex flex-col md:gap-[1rem]'>
                 <AboutSection/>
                 <MainCard text={`Academics`} bgtext={`Education`} edu='edu'/>
                 <MainCard text={`Journey`} bgtext={`Experience`} exp/>
