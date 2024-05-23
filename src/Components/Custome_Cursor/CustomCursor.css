@@ -1,0 +1,36 @@
+/* src/CustomCursor.css */
+.custom-cursor {
+    width: 10px;
+    height: 10px;
+    background-color: white; /* Change this to your desired cursor color */
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation-delay: 10000ms;
+    z-index: 1000;
+    transition: transform 0.1s ease, background-color 0.2s ease; /* Add smooth transitions */
+    will-change: transform, background-color; /* Optimize performance */
+    mix-blend-mode: difference; /* Make the cursor visible on any background */
+}
+
+
+
+/* .custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: red; 
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    transition: transform 0.1s ease, background-color 0.2s ease, width 0.2s ease, height 0.2s ease; 
+    will-change: transform, background-color, width, height; 
+}
+
+
+.custom-cursor--hover {
+    width: 40px; 
+    height: 40px; 
+} */
