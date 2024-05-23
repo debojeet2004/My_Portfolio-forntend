@@ -14,19 +14,19 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/project",
+    path: "project",
     element: <Project />,
   },
   {
-    path: "/project/:projectname",
+    path: "project/:projectname",
     element: <Each_Projects />,
   },
   {
-    path: "/experiences",
+    path: "experiences",
     element: <Experiences />,
   },
   {
-    path: "/experiences/:experiencename",
+    path: "experiences/:experiencename",
     element: <Each_Experience />,
   },
   {

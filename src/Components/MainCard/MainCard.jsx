@@ -120,7 +120,7 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,
                         subtitle={'Design and Content Head'} 
                         Location={'Jis University'}
                         classes={'transform- translateZ50px'}
-                        linkto={'/experiences'}
+                        linkto={'experiences'}
                         style1
                     />
                     <DetailsCard 
@@ -130,7 +130,7 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,
                         Title={`Google Developer Student's Club {GDSC}`} 
                         subtitle={'Management Head'} 
                         Location={'Jis University'}
-                        linkto={'/experiences'}
+                        linkto={'experiences'}
                         style1
                     />
                 </div>
