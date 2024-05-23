@@ -62,7 +62,7 @@ export default function AboutSection() {
                     </div>
                     <div
                     style={{transform: "translateZ(2rem)", transformStyle: "preserve-3d",}}
-                    className='border-2 border-stone-900 border-opacity-30 rounded-md h-[50%] md:h-[100%] md:w-[60%] p-2 flex flex-col justify-evenly gap-4'>
+                    className='md:border-2 border-stone-700 p-6 border-opacity-30 rounded-md h-[50%] md:h-[100%] md:w-[60%]  flex flex-col justify-evenly gap-4'>
                         <div style={{ transformStyle: "preserve-3d",}} className='border-b border-stone-700'>
                             <Title 
                                 text= 'About' 
@@ -73,10 +73,7 @@ export default function AboutSection() {
                         </div>
                         <div style={{transform: "translateZ(5rem)", transformStyle: "preserve-3d",}} className='group-hover:bg-stone-900 opacity-80 hover:opacity-100  rounded-md text-[.6rem] md:text-[.7rem] lg:text-[1rem] p-1 sm:overflow-scroll max-h-[18rem] font-[TRANSFORMA] hide_scrollbar'>
                             <p className='text-justify'>
-                            Hey there! 👋 I'm Debojeet Karmakar, a passionate 3rd-year <span className='underline decoration-[.2rem] decoration-red-600'>B.Tech</span> student majoring in <span className='underline decoration-[3px] decoration-sky-500'>Computer Science</span> with a keen interest in web development. Exploring the world of technology, I've found my calling in crafting captivating digital experiences through <span className='bg-amber-500 p-1 rounded-full text-black font-bold'>frontend development</span>.
-                            When I'm not diving into the depths of code, you'll likely find me lost in the strokes of my paintbrush, indulging in my love for drawing and painting. Creativity fuels my soul, whether I'm bringing a website to life with intuitive <span className='bg-yellow-200 rounded-full p-[2px] text-black font-bold'>UI designs</span> or expressing myself on canvas.
-                            In addition to my digital endeavors, <span className='decoration-2px underline decoration-green-600 decoration-[3px]'>Nature's embrace offers me solace and inspiration.</span> There's something magical about the tranquility of mountains and the gentle caress of the wind. I'm often drawn to the great outdoors, seeking moments of serenity amidst the beauty of Mother Nature.
-                            One of my favorite things about my craft is the tranquility it brings. I thrive in peaceful environments, where I can immerse myself in my work and let my creativity flow freely. Whether it's designing a sleek user interface or coding a responsive layout, I find solace in the process.
+                            Hey there! 👋 I'm Debojeet Karmakar, a passionate 3rd-year <span className="underline decoration-red-500 decoration-2">B.Tech</span> student majoring in <span className="text-red-500 font-bold bg-stone-300 p-1 rounded-md">Computer Science</span> with a love for <span className="underline decoration-teal-500 font-bold decoration-[3px]"> web development</span>. I enjoy creating captivating digital experiences through <span className="bg-amber-400 p-[3px] text-[.9rem] text-black font-bold rounded-full">frontend development</span>. When I'm not coding, you'll find me <span>painting or sketching</span>, as I love expressing creativity on both canvas and screen. Nature also inspires me, and I often seek tranquility in the mountains and the gentle caress of the wind. Whether designing intuitive UIs or coding responsive layouts, <span className="underline decoration-[2px] underline-offset-4">I thrive in peaceful environments where I can let my creativity flow</span>.
                             </p>
                         </div>
                     </div>
@@ -88,29 +85,3 @@ export default function AboutSection() {
     )
 }
 
-
-
-{/* <div id='about' className='border-2 mt-[20rem] border-zinc-900 rounded-xl w-full min-h-[30rem] flex flex-col md:flex-row justify-between md:justify-evenly md:px-10 items-center md:items-start lg:items-center py-10 '>
-        <div className='border border-zinc-500 rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] relative'>
-                <div  className='bg-gray-300 blur-xl opacity-15   absolute top-[-1.8rem] left-[-1.5rem] rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] '/>
-                <img src={profileimg} className='grayscale   absolute top-[-1.8rem] left-[-1.5rem] rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] '/>
-        </div>
-        <div className=' h-[50%] md:h-[100%] md:w-[60%] p-2 flex flex-col justify-evenly gap-4'>
-            <div className='border-b border-stone-700'>
-                <Title 
-                    text= 'About' 
-                    bgtext='About' 
-                    classes="text-[1.2rem] md:text-[2rem] lg:text-[3.4rem]"
-                    bgclasses="text-[1.8rem] md:text-[2.4rem] lg:text-[4.4rem]"
-                />
-            </div>
-            <div className=' text-[.6rem] md:text-[.7rem] lg:text-[1rem] p-1 sm:overflow-scroll max-h-[18rem] font-[TRANSFORMA] hide_scrollbar'>
-                <p className='text-justify'>
-                Hey there! 👋 I'm Debojeet Karmakar, a passionate 3rd-year <span className='underline decoration-[.2rem] decoration-red-600'>B.Tech</span> student majoring in <span className='underline decoration-[3px] decoration-sky-500'>Computer Science</span> with a keen interest in web development. Exploring the world of technology, I've found my calling in crafting captivating digital experiences through <span className='bg-amber-500 p-1 rounded-full text-black font-bold'>frontend development</span>.
-                When I'm not diving into the depths of code, you'll likely find me lost in the strokes of my paintbrush, indulging in my love for drawing and painting. Creativity fuels my soul, whether I'm bringing a website to life with intuitive <span className='bg-yellow-200 rounded-full p-[2px] text-black font-bold'>UI designs</span> or expressing myself on canvas.
-                In addition to my digital endeavors, <span className='decoration-2px underline decoration-green-600 decoration-[3px]'>Nature's embrace offers me solace and inspiration.</span> There's something magical about the tranquility of mountains and the gentle caress of the wind. I'm often drawn to the great outdoors, seeking moments of serenity amidst the beauty of Mother Nature.
-                One of my favorite things about my craft is the tranquility it brings. I thrive in peaceful environments, where I can immerse myself in my work and let my creativity flow freely. Whether it's designing a sleek user interface or coding a responsive layout, I find solace in the process.
-                </p>
-            </div>
-        </div>
-</div> */}

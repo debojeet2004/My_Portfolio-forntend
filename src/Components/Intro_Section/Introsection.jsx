@@ -1,7 +1,6 @@
 import {Typewriter} from 'react-simple-typewriter'
 import {Button, Magnetic_button ,Ellipses} from '../compnents'
 import { liquid } from '../../Assets/assets'
-// import CustomCursor from '../Custome_Cursor/CustomCursor';
 
 
 function Introsection() {
@@ -11,7 +10,6 @@ function Introsection() {
         md:h-[40rem] md:gap-4
         xl:h-[50rem] xl:gap-5
         '>
-            {/* <CustomCursor /> */}
             <p className=' font-[TRANSFORMA] text-[.8rem] md:text-[1.7rem] lg:text-[2rem]'>Hey there! I am</p>
             <div className='font-[NIKEA] ' >
                 <p className='FName  text-[1.4rem] md:text-[3.4rem] lg:text-[4rem] xl:text-[5rem]' >Debojeet</p>
@@ -32,7 +30,7 @@ function Introsection() {
             </p>
             <Button onClick={handleButtonClick}>Resume</Button>
             <div className='py-8'>
-            <Magnetic_button/>
+                <Magnetic_button/>
             </div>
             <img src={liquid} alt="" className='absolute w-[15rem] h-[15rem] md:w-[30rem] md:h-[30rem] lg:w-[40rem] lg:h-[40rem] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  lg:left-[30rem] lg:top-[22em] xl:top-[24em] xl:left-[60rem]  z-[-2] opacity-20 blur-[.3rem]'/>
             <Ellipses classes={`
