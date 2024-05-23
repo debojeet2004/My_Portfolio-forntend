@@ -14,14 +14,14 @@ function Form() {
         
         const handleSubmit = async (e) => {
             e.preventDefault();
-            const response = await fetch('http://localhost:8000/send', {
+            const response = await fetch('https://protfolio-backend-8h9u.onrender.com/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
             });
-            
+            console.log(response);
                 if (response.ok) {
                 alert('Message sent successfully!');
                 } else {
