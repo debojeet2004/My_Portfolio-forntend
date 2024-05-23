@@ -48,7 +48,7 @@ export default function AboutSection() {
             className="relative w-full rounded-2xl text-white hover:bg-stone-800 "
             >
             <div
-                style={{transform: "translateZ(8rem)", transformStyle: "preserve-3d",}}
+                style={{transform: "translateZ(4rem)", transformStyle: "preserve-3d",}}
                 className='   w-full rounded-2xl flex flex-col justify-between hover:bg-stone-950  group'
             >
                 <div 
@@ -58,10 +58,10 @@ export default function AboutSection() {
                     style={{transform: "translateZ(2rem)", transformStyle: "preserve-3d",}}
                     className='border border-zinc-800 rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] relative'>
                             <div  className='bg-gray-300 blur-xl  opacity-15 group-hover:opacity-40   absolute top-[-1.8rem] left-[-1.5rem] rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] '/>
-                            <img style={{transform: "translateZ(5rem)", transformStyle: "preserve-3d",}} src={profileimg} className=' grayscale   absolute top-[-1.8rem] left-[-1.5rem] rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] '/>
+                            <img style={{transform: "translateZ(4rem)", transformStyle: "preserve-3d",}} src={profileimg} className=' grayscale   absolute top-[-1.8rem] left-[-1.5rem] rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] '/>
                     </div>
                     <div
-                    style={{transform: "translateZ(8rem)", transformStyle: "preserve-3d",}}
+                    style={{transform: "translateZ(2rem)", transformStyle: "preserve-3d",}}
                     className='border-2 border-stone-900 border-opacity-30 rounded-md h-[50%] md:h-[100%] md:w-[60%] p-2 flex flex-col justify-evenly gap-4'>
                         <div style={{ transformStyle: "preserve-3d",}} className='border-b border-stone-700'>
                             <Title 

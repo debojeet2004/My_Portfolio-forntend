@@ -5,7 +5,7 @@ function ExperienceCard({ title,subtitle,date, description, linkto }) {
     return (
         <Link
             to={`/experiences/${linkto}`} 
-            className='border font-[TRANSFORMA] border-stone-800 p-4 bg-stone-950 w-full h-[18rem] md:min-h-[20rem] rounded-md flex flex-col justify-around hover:scale-[1.01] hover:shadow-md hover:shadow-black transition-transform ease '>
+            className='border font-[TRANSFORMA] border-stone-800 p-4 bg-stone-950 w-[96%] h-[18rem] md:min-h-[20rem] rounded-md flex flex-col justify-around hover:scale-[1.01] hover:shadow-md hover:shadow-black transition-transform ease '>
             <div className='p-4 rounded-md bg-stone-900 h-[10rem]  flex flex-col md:flex-row justify-between items-start md:items-center'>
                 <div className=' w-full md:w-[80%]  flex flex-col gap-1'>
                     <p className='text-[.9rem] md:text-[1.4rem] lg:text-[1.6rem] font-bold'>{title}</p>

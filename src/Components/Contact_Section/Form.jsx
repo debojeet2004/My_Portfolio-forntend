@@ -30,11 +30,11 @@ function Form() {
         };
     return (
         <div 
-        style={{ transform: "translateZ(10rem)", transformStyle: "preserve-3d" }}
+        style={{ transform: "translateZ(5rem)", transformStyle: "preserve-3d" }}
         className="border border-stone-800 w-full lg:w-[50%] xl:w-[40%] h-full hover:bg-stone-900 rounded-xl flex flex-col justify-between lg:justify-around p-2 md:p-4 gap-3 items-center"
     >
         <div 
-        style={{ transform: "translateZ(7rem)", transformStyle: "preserve-3d" }} 
+        style={{ transform: "translateZ(6rem)", transformStyle: "preserve-3d" }} 
         className="border border-stone-800 p-1 md:p-2 w-full rounded-lg hover:bg-stone-800 flex flex-col font-[TRANSFORMA] font-bold justify-center items-start gap-2 md:gap-4"
         >
         <label 
@@ -53,7 +53,7 @@ function Form() {
         />
         </div>
         <div 
-        style={{ transform: "translateZ(7rem)", transformStyle: "preserve-3d" }} 
+        style={{ transform: "translateZ(6rem)", transformStyle: "preserve-3d" }} 
         className="border border-stone-800 p-1 md:p-2 w-full rounded-lg hover:bg-stone-800 flex flex-col font-[TRANSFORMA] font-bold justify-center items-start gap-2 md:gap-4"
         >
         <label 
@@ -72,7 +72,7 @@ function Form() {
         />
         </div>
         <div 
-        style={{ transform: "translateZ(7rem)", transformStyle: "preserve-3d" }} 
+        style={{ transform: "translateZ(6rem)", transformStyle: "preserve-3d" }} 
         className="border border-stone-800 p-1 md:p-2 w-full rounded-lg hover:bg-stone-800 flex flex-col font-[TRANSFORMA] font-bold justify-center items-start gap-2 md:gap-4"
         >
         <label 
@@ -90,8 +90,8 @@ function Form() {
         />
         </div>
         <button 
-        style={{ transform: "translateZ(7rem)", transformStyle: "preserve-3d" }} 
-        className="border-2 p-1 text-[.7rem] md:text-[1.4rem] md:p-2 lg:w-[10rem] rounded-md border-stone-700 uppercase opacity-70 hover:opacity-100 hover:border-stone-400 active:bg-stone-600"
+        style={{ transform: "translateZ(5rem)", transformStyle: "preserve-3d" }} 
+        className="border-2 p-1 text-[.7rem] md:text-[1.4rem] md:p-2 w-[5rem] md:w-[8rem] lg:w-[10rem] rounded-md border-stone-700 uppercase opacity-70 hover:opacity-100 hover:border-stone-400 active:bg-stone-600"
         onClick={handleSubmit}
         >
         Send
@@ -102,37 +102,5 @@ function Form() {
 
 export default Form
 
-
-
-
-
-//     // const [formData, setFormData] = useState({
-//     //     name: '',
-//     //     email: '',
-//     //     message: ''
-//     // });
-        
-//     //     const handleChange = (e) => {
-//     //         const { id, value } = e.target;
-//     //         setFormData((prevData) => ({ ...prevData, [id]: value }));
-//     //     };
-        
-//     //     const handleSubmit = async (e) => {
-//     //         e.preventDefault();
-//     //         const response = await fetch('http://localhost:8000/send', {
-//     //             method: 'POST',
-//     //             headers: {
-//     //                 'Content-Type': 'application/json',
-//     //             },
-//     //             body: JSON.stringify(formData),
-//     //         });
-            
-//     //             if (response.ok) {
-//     //             alert('Message sent successfully!');
-//     //             } else {
-//     //             alert('Failed to send message.');
-//     //             }
-//     //     };
-    
 
 

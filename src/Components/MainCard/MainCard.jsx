@@ -7,8 +7,8 @@ import {skills} from "./techstack";
 
 
 // const ROTATION_RANGE = 32.5; //original value
-const ROTATION_RANGE = 25;
-const HALF_ROTATION_RANGE = 25 / 2;
+const ROTATION_RANGE = 23;
+const HALF_ROTATION_RANGE = 23 / 2;
 
 export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,connect}) {
     const ref = useRef(null);

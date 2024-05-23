@@ -22,10 +22,10 @@ function Home() {
                 </div>
             )}
         </div>
-        <div className='w-full flex  flex-col gap-[15rem]'>
+        <div className='w-full flex  flex-col '>
             
             <Introsection/> 
-            <div className='w-full flex flex-col gap-[3rem] md:gap-[10rem] lg:gap-[17rem] xl:gap-[18rem]'>
+            <div className='w-full flex flex-col md:gap-[4rem]'>
                 <AboutSection/>
                 <MainCard text={`Academics`} bgtext={`Education`} edu='edu'/>
                 <MainCard text={`Journey`} bgtext={`Experience`} exp/>

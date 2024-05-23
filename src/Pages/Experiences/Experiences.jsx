@@ -16,7 +16,7 @@ function Experiences() {
         <div className='px-4 w-full'>
             <BreadCrumb linkname="Experiences" secondlinkname=".." />
         </div>
-        <div className='  p-4 w-full overflow-scroll hide_scrollbar flex flex-wrap justify-center md:justify-start items-start gap-4 md:gap-[2rem]'>
+        <div className='p-2  w-full overflow-scroll hide_scrollbar flex flex-wrap justify-center md:justify-start items-start gap-4 md:gap-[2rem]'>
             {
                 expdata.map((exp, index) => (
                     <ExperienceCard
