@@ -14,7 +14,7 @@ function Form() {
         
         const handleSubmit = async (e) => {
             e.preventDefault();
-            const response = await fetch('https://protfolio-backend-8h9u.onrender.com/', {
+            const response = await fetch('https://protfolio-backend-8h9u.onrender.com/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
