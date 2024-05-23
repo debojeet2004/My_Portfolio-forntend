@@ -21,7 +21,7 @@ export default function DetailsCard(
     
     return (
         <div 
-            className={` full font-[TRANSFORMA] border-2 rounded-lg ${!borderrad ? ('md:rounded-full') : ('md:rounded-2xl')} border-zinc-900 flex flex-col items-start px-4 md:px-20 py-4 group-hover:bg-stone-800  group-hover:bg-opacity-55 text-stone-400  hover:text-stone-100 active:opacity-60 `}>
+            className={` full font-[TRANSFORMA] border-2 rounded-lg ${!borderrad ? ('md:rounded-full') : ('md:rounded-2xl')} border-zinc-900 flex flex-col items-start px-4 md:px-20 py-4 group-hover:bg-stone-800  group-hover:bg-opacity-55 text-stone-400 hover:scale-[1.009] transition-transform ease  hover:text-stone-100 active:opacity-60 `}>
             {style1 && (
                 <Link to={linkto ? linkto : '/'}  className='w-full'>
                     <p className=' w-full text-[1rem] md:text-2xl font-bold'>{Title}</p>

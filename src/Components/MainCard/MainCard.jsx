@@ -6,8 +6,9 @@ import {skills} from "./techstack";
 
 
 
-const ROTATION_RANGE = 32.5;
-const HALF_ROTATION_RANGE = 32.5 / 2;
+// const ROTATION_RANGE = 32.5; //original value
+const ROTATION_RANGE = 25;
+const HALF_ROTATION_RANGE = 25 / 2;
 
 export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,connect}) {
     const ref = useRef(null);
@@ -48,10 +49,10 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,
         style={style}
         className="relative h-fit w-full rounded-2xl text-white hover:bg-stone-900 ">
         <div
-            style={{transform: "translateZ(8rem)", transformStyle: "preserve-3d",}}
+            style={{transform: "translateZ(3rem)", transformStyle: "preserve-3d",}}
             className=' border-2 border-stone-900  w-full p-4 rounded-2xl flex flex-col justify-between hover:bg-stone-950  group'>
             <div
-                style={{transform: "translateZ(8rem)",transformStyle: "preserve-3d"}}
+                style={{transform: "translateZ(5rem)",transformStyle: "preserve-3d"}}
                 className='border-b-2  border-stone-800 h-[4rem] md:h-[8rem]  flex justify-start items-center '>
                 <Title text={text} bgtext={bgtext} 
                     classes="text-[1.2rem] md:text-[2rem] lg:text-[3.4rem]"
@@ -72,7 +73,7 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,
             {
             (edu) ? (
             <div
-                style={{transform: "translateZ(15rem)",transformStyle: "preserve-3d"}}
+                style={{transform: "translateZ(12rem)",transformStyle: "preserve-3d"}}
                 className=' w-full overflow-scroll hide_scrollbar h-[25rem] lg:h-[35rem] p-4 font-[TRANSFORMA] flex flex-col justify-evenly gap-10'
             >
                 <DetailsCard 
@@ -109,7 +110,7 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,
                 className=' w-full font-[TRANSFORMA] flex flex-col justify-evenly  rounded-xl gap-10 '
             >
                 <div 
-                    style={{transform: "translateZ(15rem)",transformStyle: "preserve-3d"}}
+                    style={{transform: "translateZ(12rem)",transformStyle: "preserve-3d"}}
                     className=' w-full  max-h-[20rem] md:max-h-[45rem] flex flex-wrap justify-center md:justify-center xl:justify-center rounded-xl p-6 xl:p-4 gap-10 xl:gap-6 h-[20rem] lg:h-[40rem] xl:h-fit items-center overflow-scroll   hide_scrollbar '
                 >
                     <DetailsCard 
@@ -143,7 +144,7 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,
                 style={{transformStyle: "preserve-3d"}}
                 className=' w-full '>
                 <div 
-                    style={{transform: "translateZ(15rem)",transformStyle: "preserve-3d"}}
+                    style={{transform: "translateZ(6rem)",transformStyle: "preserve-3d"}}
                     className=' w-full  maxh-[20rem] md:max-h-[40rem] flex flex-wrap justify-center md:justify-center xl:justify-center rounded-xl p-6 xl:p-4 gap-10 xl:gap-6 h-[20rem] lg:h-[40rem] xl:h-fit items-center overflow-scroll xl:overflow-visible  hide_scrollbar '>
                 {
                 skills.map((skill,index) => {
@@ -166,7 +167,7 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,
                 style={{transformStyle: "preserve-3d"}}
                 className=' w-full  flex  justify-center items-center md:justify-start   '>
                 <div 
-                    style={{transform: "translateZ(20rem)",transformStyle: "preserve-3d"}}
+                    style={{transform: "translateZ(12rem)",transformStyle: "preserve-3d"}}
                     className=' p-6 flex flex-col gap-10 overflow-scroll max-h-[30rem] md:max-h-[40rem]  hide_scrollbar'>
                     <DetailsCard style2 project_title={`Sample-Ecom`} tech_used={`React-js, React-router, Redux-tookit, Axios, json-data Manupulation`} project_description={`Experience the future of online shopping with our Sample E-commerce Project. Powered by React.js and React Router, it offers a smooth, single-page application experience. Utilizing Redux Toolkit for state management and Axios for efficient API calls, coupled with seamless JSON data manipulation, this project provides a robust platform for building modern e-commerce solutions.`} />
                     <DetailsCard style2 project_title={`Currency Convertor`} tech_used={`Javascript, React-js, Json_data, Axois, Api-data Handling `} project_description={`Our Currency Converter leverages JavaScript and React.js to deliver a seamless user experience, enabling swift currency conversions. With Axios for API data handling and JSON data integration, users can effortlessly fetch real-time exchange rates, making it an essential tool for travelers and finance enthusiasts alike.`} />
