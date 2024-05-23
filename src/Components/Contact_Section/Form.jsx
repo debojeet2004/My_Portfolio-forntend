@@ -21,7 +21,7 @@ function Form() {
                 },
                 body: JSON.stringify(formData),
             });
-            console.log(response);
+            // console.log(response);
                 if (response.ok) {
                 alert('Message sent successfully!');
                 } else {
