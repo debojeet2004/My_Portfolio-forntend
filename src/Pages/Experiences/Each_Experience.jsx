@@ -4,8 +4,6 @@ import {expdata} from './ExperienceData'
 import { useParams } from 'react-router-dom';
 import { linkedin as linkedinIcon, github_2 as githubIcon } from '../../Assets/assets';
 
-import { ecom } from '../Projects/images/imgs'
-
 function Each_Experience() {
     const { experiencename } = useParams();
     const [experience, setexperience] = useState(null);
@@ -21,7 +19,7 @@ function Each_Experience() {
     
     const { title, subtitle , description,date, images, linkedin, company,companylink, linkto } = experience;
     return (
-        <div className='capitalize h-[58em] font-[TRANSFORMA] w-full flex flex-col justify-start items-start gap-[2rem] p-4'>
+        <div className='border overflow-clip capitalize font-[TRANSFORMA] w-full flex flex-col justify-start items-start gap-[2rem] p-2'>
             <div className=''>
                 <BreadCrumb linkname="Experiences" linkto="/Experiences" secondlinkname={linkto} />
             </div>
@@ -31,9 +29,9 @@ function Each_Experience() {
                 <p>{subtitle}</p>
                 <p>{date}</p>
             </div>
-            <div className=' p-1 w-full flex flex-col-reverse md:flex-row justify-between gap-[2rem] overflow-hidden'>
+            <div className='border h-fit lg:h-[40rem] w-full flex flex-col-reverse md:flex-row justify-between items-start gap-[2rem] overflow-hidden'>
                 <div className=' w-full md:w-[60%] gap-[2rem] flex flex-col justify-start'>
-                    <p className=' max-h-[20rem] md:max-h-[20rem] lg:max-h-[40rem] overflow-scroll lg:overflow-auto hide_scrollbar text-left md:text-justify leading-[1.6rem]'>{description}</p>
+                    <p className=' max-h-[30rem] md:max-h-[30rem] lg:max-h-[45rem] overflow-scroll lg:overflow-auto hide_scrollbar text-left md:text-justify leading-[1.6rem]'>{description}</p>
                     {
                     (linkedin ) &&
                         (<div className='w-full flex justify-start py-2 items-center'>
@@ -50,10 +48,9 @@ function Each_Experience() {
                         </div>) 
                     }
                 </div>
-                <div className=' w-[100%] max-h-[20rem] md:w-[35%] lg:px-8  lg:max-h-[40rem] overflow-scroll hide_scrollbar flex flex-col justify-start items-start gap-[1rem]'>
-                    {/* <img  src={ecom} alt='imgss' className='border w-[10rem] h-[5rem] md:w-[100%] md:h-[10rem] lg:h-[15rem]' /> */}
+                <div className='  w-[100%] max-h-[43rem] md:w-[35%] md:h-[30rem]  lg:h-[40rem] overflow-scroll hide_scrollbar flex flex-col justify-start items-start gap-[1rem]'>
                     {images && images.map((img, index) => (
-                        <img key={index} src={img} alt={`exp ${index + 1}`} className='border-4 opacity-70 hover:opacity-100 border-stone-800 w-[10rem] h-[5rem] md:w-[100%] md:h-[10rem] lg:h-[15rem]' />
+                        <img key={index} src={img} alt={`exp ${index + 1}`} className='border-2 opacity-70 hover:opacity-100 border-stone-800 w-full h-[10rem] md:w-[100%] md:h-[10rem] lg:h-[15rem]' />
                     ))}
                 </div>
             </div>
