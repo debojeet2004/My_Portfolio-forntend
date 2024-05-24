@@ -48,7 +48,7 @@ function Each_Experience() {
                         </div>) 
                     }
                 </div>
-                <div className='  w-[100%] max-h-[43rem] md:w-[35%] md:h-[30rem]  lg:h-[40rem] overflow-scroll hide_scrollbar flex flex-col justify-start items-start gap-[1rem]'>
+                <div className='  w-[100%] p-2 max-h-[43rem] md:w-[35%] md:h-[30rem]  lg:h-[40rem] overflow-scroll hide_scrollbar flex flex-col justify-start items-start gap-[1rem]'>
                     {images && images.map((img, index) => (
                         <img key={index} src={img} alt={`exp ${index + 1}`} className='border-2 opacity-70 hover:opacity-100 border-stone-800 w-full h-[10rem] md:w-[100%] md:h-[10rem] lg:h-[15rem]' />
                     ))}
