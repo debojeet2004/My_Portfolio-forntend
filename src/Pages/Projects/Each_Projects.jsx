@@ -32,7 +32,7 @@ function Each_Projects() {
       </div>
       <div className='w-full flex flex-col-reverse md:flex-row justify-between gap-[2rem]'>
         <div className='w-full md:w-[60%] gap-[2rem] flex flex-col justify-start'>
-          <p className='max-h-[10rem] md:max-h-[20rem] lg:max-h-[35rem] overflow-scroll hide_scrollbar'>{description}</p>
+          <p className=' max-h-[30rem] md:max-h-[30rem] lg:max-h-[45rem] overflow-scroll lg:overflow-auto hide_scrollbar text-left md:text-justify leading-[1.6rem]'>{description}</p>
           {(linkedin || github) &&
             (<div className='w-full flex justify-start py-2 items-center'>
             <p>Links:</p>
@@ -55,9 +55,9 @@ function Each_Projects() {
           </div>) 
           }
         </div>
-        <div className=' w-[100%] md:w-[35%] lg:px-8 lg:max-h-[40rem] overflow-scroll hide_scrollbar flex flex-col justify-start items-start gap-[1rem]'>
+        <div className=' w-[100%] p-2 max-h-[43rem] md:w-[35%] md:h-[30rem]  lg:h-[40rem] overflow-scroll hide_scrollbar flex flex-col justify-start items-start gap-[1rem]'>
           {images && images.map((img, index) => (
-            <img key={index} src={img} alt={`Project ${index + 1}`} className='border-4 opacity-70 hover:opacity-100 border-stone-800 w-[10rem] h-[5rem] md:w-[100%] md:h-[10rem] lg:h-[15rem]' />
+            <img key={index} src={img} alt={`Project ${index + 1}`} className='border-2 opacity-70 hover:opacity-100 border-stone-800 w-full h-[10rem] md:w-[100%] md:h-[10rem] lg:h-[15rem]' />
           ))}
         </div>
       </div>
