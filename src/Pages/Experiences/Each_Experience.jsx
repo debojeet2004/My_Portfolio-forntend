@@ -19,7 +19,7 @@ function Each_Experience() {
     
     const { title, subtitle , description,date, images, linkedin, company,companylink, linkto } = experience;
     return (
-        <div className='border overflow-clip capitalize font-[TRANSFORMA] w-full flex flex-col justify-start items-start gap-[2rem] p-2'>
+        <div className=' overflow-clip capitalize font-[TRANSFORMA] w-full flex flex-col justify-start items-start gap-[2rem] p-2'>
             <div className=''>
                 <BreadCrumb linkname="Experiences" linkto="/Experiences" secondlinkname={linkto} />
             </div>
@@ -29,7 +29,7 @@ function Each_Experience() {
                 <p>{subtitle}</p>
                 <p>{date}</p>
             </div>
-            <div className='border h-fit lg:h-[40rem] w-full flex flex-col-reverse md:flex-row justify-between items-start gap-[2rem] overflow-hidden'>
+            <div className=' h-fit lg:h-[40rem] w-full flex flex-col-reverse md:flex-row justify-between items-start gap-[2rem] overflow-hidden'>
                 <div className=' w-full md:w-[60%] gap-[2rem] flex flex-col justify-start'>
                     <p className=' max-h-[30rem] md:max-h-[30rem] lg:max-h-[45rem] overflow-scroll lg:overflow-auto hide_scrollbar text-left md:text-justify leading-[1.6rem]'>{description}</p>
                     {
