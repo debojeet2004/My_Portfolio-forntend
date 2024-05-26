@@ -10,7 +10,7 @@ import {skills} from "./techstack";
 const ROTATION_RANGE = 23;
 const HALF_ROTATION_RANGE = 23 / 2;
 
-export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,connect}) {
+export default  function MainCard ({text, bgtext, edu, tech, exp, project,connect}) {
     const ref = useRef(null);
     const x = useMotionValue(0);
     const y = useMotionValue(0);
@@ -41,7 +41,7 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,
     const ids = [edu, tech, exp, project, connect].filter(Boolean).join(' ');
 
     return (
-    <div id={ids} className={` h-screen flex justify-center items-center `}>
+        <div id={ids} className={` lg:p-[2.5rem] xl:p-[3rem] h-screen flex justify-center items-center `}>
         <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
@@ -144,8 +144,8 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,about,
                 style={{transformStyle: "preserve-3d"}}
                 className=' w-full '>
                 <div 
-                    style={{transform: "translateZ(6rem)",transformStyle: "preserve-3d"}}
-                    className=' w-full  maxh-[20rem] md:max-h-[40rem] flex flex-wrap justify-center md:justify-center xl:justify-center rounded-xl p-6 xl:p-4 gap-10 xl:gap-6 h-[20rem] lg:h-[40rem] xl:h-fit items-center overflow-scroll xl:overflow-visible  hide_scrollbar '>
+                    style={{transform: "translateZ(11rem)",transformStyle: "preserve-3d"}}
+                    className=' w-full  maxh-[20rem] md:max-h-[40rem] flex flex-wrap justify-center md:justify-center xl:justify-center rounded-xl p-6 xl:p-4 gap-10 xl:gap-6 h-[20rem] lg:h-[40rem] xl:h-fit items-center overflow-scroll   hide_scrollbar '>
                 {
                 skills.map((skill,index) => {
                     return <Technology_Card

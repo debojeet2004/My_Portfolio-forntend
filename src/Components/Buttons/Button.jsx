@@ -19,8 +19,8 @@ function Button({children,onClick, NavigateTo}) {
             duration-300 
             ease-in-out
             border-[.2rem] border-zinc-800 hover:border-zinc-800 border-opacity-35 active:border-zinc-600
-            mt-5
             md:p-6
+            hover:shadow-[0_0px_10px_2px] hover:shadow-stone-800
             "
         > {children}
         </Link>

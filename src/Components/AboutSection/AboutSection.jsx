@@ -39,7 +39,7 @@ export default function AboutSection() {
     const style = screenWidth >= 1024 ? { transformStyle: "preserve-3d", transform } : {};
 
     return (
-        <div id='about'  className="h-screen flex justify-center items-center">
+        <div id='about'  className=" lg:p-[1.5rem] xl:p-[2.5rem] 2xl:p-[4rem] h-screen flex justify-center items-center">
             <motion.div
             ref={ref}
             onMouseMove={handleMouseMove}
@@ -58,11 +58,11 @@ export default function AboutSection() {
                     style={{transform: "translateZ(2rem)", transformStyle: "preserve-3d",}}
                     className='border border-zinc-800 rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] relative'>
                             <div  className='bg-gray-300 blur-xl  opacity-15 group-hover:opacity-40   absolute top-[-1.8rem] left-[-1.5rem] rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] '/>
-                            <img style={{transform: "translateZ(4rem)", transformStyle: "preserve-3d",}} src={profileimg} className=' grayscale   absolute top-[-1.8rem] left-[-1.5rem] rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] '/>
+                            <img style={{transform: "translateZ(4rem)", transformStyle: "preserve-3d",}} src={profileimg} className=' grayscale group-hover:grayscale-0 transition-all ease-linear   absolute top-[-1.8rem] left-[-1.5rem] rounded-bl-xl rounded-tr-xl w-[6rem] h-[8rem] md:h-[18rem] md:w-[14rem] lg:h-[22rem] lg:w-[18rem] '/>
                     </div>
                     <div
                     style={{transform: "translateZ(2rem)", transformStyle: "preserve-3d",}}
-                    className='md:border-2 border-stone-700 p-6 border-opacity-30 rounded-md h-[50%] md:h-[100%] md:w-[60%]  flex flex-col justify-evenly gap-4'>
+                    className='md:border border-stone-700 p-6 border-opacity-30 rounded-md h-[50%] md:h-[100%] md:w-[60%]  flex flex-col justify-evenly gap-4'>
                         <div style={{ transformStyle: "preserve-3d",}} className='border-b border-stone-700'>
                             <Title 
                                 text= 'About' 

@@ -1,6 +1,7 @@
 import Container from "./Container/Container";
 
 import Navbar from "./NavBar/Navbar";
+import Navbar2 from "./NavBar/Navbar2";
 import Hamburger from "./NavBar/Hamburger";
 
 import Footer from "./Footer/Footer";
@@ -30,6 +31,7 @@ import BreadCrumb from '../Components/BreadCrumbs/BreadCrumb';
 export {
     Container,
     Navbar,
+    Navbar2,
     Footer,
     Introsection,
     AboutSection,
