@@ -11,7 +11,7 @@ function Home() {
 
     return (
         <>
-        <div className=' rounded-lg sticky top-5 w-full z-10 backdrop-blur-md backdrop-brightness-150 mix-blend-exclusion'>
+        <div className=' rounded-lg sticky top-5 w-full z-10 backdrop-blur-md backdrop-brightness-150 mix-blend-exclusion '>
             <Navbar isChecked={isChecked} handleCheckboxChange={handleCheckboxChange} />
             {isChecked && (
                 <div className=' h-[40rem] w-full mt-6 flex flex-col justify-evenly  items-center z-20 transition-transform ease-in  '>
