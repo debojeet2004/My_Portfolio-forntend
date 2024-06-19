@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AboutSection, Footer, Introsection, MainCard, Navbar } from '../../Components/compnents'
 import {Link} from 'react-scroll'
+import Contact from '../../Components/Contact_Section/Contact';
 
 function Home() {
     const [isChecked, setIsChecked] = useState(false);
@@ -35,7 +36,8 @@ function Home() {
                 <MainCard text={`Journey`} bgtext={`Experience`} exp='exp'/>
                 <MainCard text={`Tech Stack`} bgtext={`Technology`}tech='tech' />
                 <MainCard text={`Projects`} bgtext={`Compositions`}project='project'/>
-                <MainCard text={`Say hello_`} bgtext={`get in touch`} connect='connect'/>
+                <Contact/>
+                
             </div>
         </div>
         <Footer />

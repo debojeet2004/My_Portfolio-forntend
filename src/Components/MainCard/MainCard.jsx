@@ -1,5 +1,5 @@
 import { motion, useMotionTemplate, useMotionValue, useSpring} from "framer-motion";
-import {Title, DetailsCard, Technology_Card, ContactSection} from "../compnents";
+import {Title, DetailsCard, Technology_Card} from "../compnents";
 import React, { useRef } from "react";
 import {skills} from "./techstack";
 
@@ -38,7 +38,7 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,connec
 
     const screenWidth = window.innerWidth;
     const style = screenWidth >= 1024 ? { transformStyle: "preserve-3d", transform } : {};
-    const ids = [edu, tech, exp, project, connect].filter(Boolean).join(' ');
+    const ids = [edu, tech, exp, project].filter(Boolean).join(' ');
 
     return (
         <div id={ids} className={` lg:p-[2.5rem] xl:p-[3rem] h-screen flex justify-center items-center `}>
@@ -60,16 +60,6 @@ export default  function MainCard ({text, bgtext, edu, tech, exp, project,connec
                     style
                 />
             </div>
-            {
-            (connect) ? (
-            <div
-                style={{transformStyle: "preserve-3d"}}
-                className=' w-full p-2 font-[TRANSFORMA] '
-            >
-                <ContactSection/>
-            </div>
-            ) : (null)
-            }
             {
             (edu) ? (
             <div

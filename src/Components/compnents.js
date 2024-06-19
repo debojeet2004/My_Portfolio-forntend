@@ -14,7 +14,6 @@ import Button from "./Buttons/Button";
 
 import AboutSection from "./AboutSection/AboutSection";
 
-import ContactSection from "./Contact_Section/ContactSection";
 
 import MainCard from "./MainCard/MainCard";
 import Technology_Card from "./MainCard/Technology_Card";
@@ -35,7 +34,6 @@ export {
     Footer,
     Introsection,
     AboutSection,
-    ContactSection,
     Technology_Card,
     DetailsCard,
     MainCard,
